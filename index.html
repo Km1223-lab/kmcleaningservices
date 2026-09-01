@@ -213,30 +213,32 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/info@kmcleaningservices.co.ke" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="Your Phone">
+                        <input type="tel" name="phone" placeholder="Your Phone">
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <select name="service" required>
                             <option value="">Select a Service</option>
-                            <option value="residential">Residential Cleaning</option>
-                            <option value="commercial">Commercial Cleaning</option>
-                            <option value="deep">Deep Cleaning</option>
-                            <option value="window">Window Cleaning</option>
-                            <option value="carpet">Carpet Cleaning</option>
-                            <option value="moveout">Move-In/Out Cleaning</option>
+                            <option value="Residential Cleaning">Residential Cleaning</option>
+                            <option value="Commercial Cleaning">Commercial Cleaning</option>
+                            <option value="Deep Cleaning">Deep Cleaning</option>
+                            <option value="Window Cleaning">Window Cleaning</option>
+                            <option value="Carpet Cleaning">Carpet Cleaning</option>
+                            <option value="Move-In/Out Cleaning">Move-In/Out Cleaning</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tell us about your cleaning needs..." rows="5"></textarea>
+                        <textarea name="message" placeholder="Tell us about your cleaning needs..." rows="5" required></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://km1223-lab.github.io/kmcleaningservices/thank-you.html">
                     <button type="submit" class="btn btn-primary">Send Inquiry</button>
                 </form>
             </div>
