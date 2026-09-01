@@ -1,6 +1,6 @@
-# KM Cleaning Services Website
+# KM Cleaning Services Website - Kenya
 
-A professional, responsive website for KM Cleaning Services - providing high-quality residential and commercial cleaning solutions.
+A professional, responsive website for KM Cleaning Services - providing high-quality residential and commercial cleaning solutions across Kenya.
 
 ## 🌐 Live Website
 
@@ -8,7 +8,7 @@ Visit our website: [https://km1223-lab.github.io/kmcleaningservices/](https://km
 
 ## 📋 About
 
-KM Cleaning Services is a professional cleaning company offering comprehensive cleaning solutions for homes and businesses. With over 10 years of experience, we pride ourselves on delivering exceptional results with integrity and professionalism.
+KM Cleaning Services is a professional cleaning company operating across Kenya, offering comprehensive cleaning solutions for homes and businesses. With over 10 years of experience, we pride ourselves on delivering exceptional results with integrity and professionalism throughout Nairobi and surrounding regions.
 
 ### Services Offered
 
@@ -18,6 +18,15 @@ KM Cleaning Services is a professional cleaning company offering comprehensive c
 - **Window Cleaning** - Crystal clear windows inside and out
 - **Carpet Cleaning** - Professional carpet and upholstery cleaning
 - **Move-In/Out Cleaning** - Complete property cleaning for moving day
+
+### Service Areas in Kenya
+
+- Nairobi CBD
+- Westlands
+- Upper Hill
+- Karen
+- Kileleshwa
+- South B & C
 
 ## 📁 Project Structure
 
@@ -133,7 +142,7 @@ This website is hosted on GitHub Pages. To deploy:
 
 The contact form uses **FormSubmit.co** for email delivery:
 
-- **Endpoint**: `https://formsubmit.co/info@kmcleaningservices.uk`
+- **Endpoint**: `https://formsubmit.co/info@kmcleaningservices.co.ke`
 - **Method**: POST
 - **No Backend Required**: Form submissions are handled by FormSubmit
 
@@ -142,13 +151,30 @@ To modify the email recipient, update the form action in `index.html`:
 <form action="https://formsubmit.co/your-email@example.com" method="POST">
 ```
 
+## 💰 Pricing & Payment Methods
+
+### Pricing (KES - Kenyan Shillings)
+
+- **Residential Cleaning**: Starting from KES 2,000/hour
+- **Deep Cleaning**: KES 1,000-2,000 per room
+- **Window Cleaning**: KES 1,000-1,500 per visit
+- **Carpet Cleaning**: KES 1,500 per room
+- **Move-In/Out Cleaning**: Starting from KES 5,000 per property
+- **Commercial Cleaning**: Custom Quote
+
+### Payment Methods Accepted
+
+- Mobile Money (M-Pesa)
+- Bank Transfers
+- Cash Payments
+
 ## 🔒 Security Features
 
 - HTTPS enabled on GitHub Pages
 - Form validation before submission
 - No sensitive data stored locally
-- Privacy Policy compliant
-- GDPR ready
+- Privacy Policy compliant with Kenyan Data Protection Act 2019
+- Data protection ready
 
 ## 📱 Mobile Optimization
 
@@ -204,7 +230,7 @@ To modify the email recipient, update the form action in `index.html`:
 ### Services (services.html)
 - Detailed service descriptions
 - Service inclusions
-- Pricing information
+- KES pricing information
 - Individual call-to-action buttons
 - Professional layout
 
@@ -213,10 +239,10 @@ To modify the email recipient, update the form action in `index.html`:
 - Mission and values
 - Why choose us section
 - Team member profiles
-- Certifications and standards
+- Service coverage areas in Kenya
 
 ### Privacy (privacy.html)
-- GDPR compliant privacy policy
+- Kenya Data Protection Act 2019 compliant privacy policy
 - Data collection practices
 - User rights and choices
 - Contact information
@@ -232,14 +258,14 @@ To modify the email recipient, update the form action in `index.html`:
 
 ## 📞 Contact Information
 
-- **Phone**: +44 (0) 123 456 7890
-- **Email**: info@kmcleaningservices.uk
-- **Website**: www.kmcleaningservices.uk
-- **Service Areas**: Greater London & Surrounding Areas
+- **Phone**: +254 712 345 678
+- **Email**: info@kmcleaningservices.co.ke
+- **Website**: www.kmcleaningservices.co.ke
+- **Service Areas**: Nairobi & Surrounding Regions, Kenya
 
 ## 📜 License
 
-This project is proprietary and owned by KM Cleaning Services. All rights reserved.
+This project is proprietary and owned by KM Cleaning Services Kenya. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -247,29 +273,31 @@ For improvements or bug reports, please contact the development team.
 
 ## 📈 Future Enhancements
 
-- [ ] Online booking system
-- [ ] Payment gateway integration
+- [ ] Online booking system with M-Pesa integration
+- [ ] Payment gateway integration (Daraja API)
 - [ ] Customer portal login
-- [ ] Blog section
+- [ ] Blog section with cleaning tips
 - [ ] Photo gallery
-- [ ] Live chat support
+- [ ] Live chat support with WhatsApp integration
 - [ ] Customer review system
 - [ ] Service pricing calculator
 - [ ] Team member profiles with photos
-- [ ] Google Maps integration
+- [ ] Google Maps integration for service areas
 
 ## 📞 Support
 
 For technical support or inquiries, contact:
-- Email: info@kmcleaningservices.uk
-- Phone: +44 (0) 123 456 7890
+- Email: info@kmcleaningservices.co.ke
+- Phone: +254 712 345 678
+- WhatsApp: +254 712 345 678
 
 ## 🎉 Credits
 
 Developed by: KM Cleaning Services Web Development Team
-Last Updated: August 2024
+Last Updated: September 2024
 
 ---
 
 **Version**: 1.0.0  
-**Status**: Live ✅
+**Status**: Live ✅  
+**Location**: Kenya (Nairobi & Surrounding Regions)
