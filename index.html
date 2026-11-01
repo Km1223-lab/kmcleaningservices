@@ -36,12 +36,34 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Professional Cleaning Services</h1>
-            <p>Transform your space with our expert cleaning team across Kenya</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToSection('contact')">Get a Quote</button>
-                <button class="btn btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <span class="eyebrow">Kenya's Trusted Cleaning Experts</span>
+                <h1>Bright spaces, spotless results.</h1>
+                <p>From peaceful homes to busy offices, we deliver dependable, detail-focused cleaning across Nairobi and Kenya.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Get a Quote</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">Our Services</button>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>10+</strong>
+                        <span>Years Experience</span>
+                    </div>
+                    <div>
+                        <strong>500+</strong>
+                        <span>Happy Clients</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Quick Response</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" aria-label="Cleaning service illustration">
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+                <img src="assets/cleaning-hero.svg" alt="Professional home and office cleaning services illustration">
             </div>
         </div>
     </section>
@@ -103,7 +125,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>About KM Cleaning Services</h2>
-                    <p>With over 10 years of experience in the cleaning industry across Kenya, KM Cleaning Services has built a reputation for excellence, reliability, and customer satisfaction. Our team of trained professionals is dedicated to providing top-quality cleaning solutions for both residential and commercial clients throughout the country.</p>
+                    <p>With over 10 years of experience in the cleaning industry across Kenya, KM Cleaning Services has built a reputation for excellence, reliability, and customer satisfaction. We believe every property deserves a healthy, welcoming environment, and our skilled team works with precision and care on every job.</p>
                     <div class="about-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
@@ -124,10 +146,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="placeholder-image">
-                        <i class="fas fa-image"></i>
-                        <p>Professional Team at Work</p>
-                    </div>
+                    <img src="assets/work-visual.svg" alt="Cleaning team at work performing deep cleaning service">
                 </div>
             </div>
         </div>
@@ -199,6 +218,13 @@
                         </div>
                     </div>
                     <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Website</h3>
+                            <p><a href="https://www.kmcleaningservices.uk">www.kmcleaningservices.uk</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h3>Service Area</h3>
@@ -238,7 +264,7 @@
                         <textarea name="message" placeholder="Tell us about your cleaning needs..." rows="5" required></textarea>
                     </div>
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://km1223-lab.github.io/kmcleaningservices/thank-you.html">
+                    <input type="hidden" name="_next" value="https://www.kmcleaningservices.uk/thank-you.html">
                     <button type="submit" class="btn btn-primary">Send Inquiry</button>
                 </form>
             </div>
