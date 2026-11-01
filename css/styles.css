@@ -120,33 +120,128 @@ body {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 120px 20px;
-    text-align: center;
     min-height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero-content {
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e0f2fe;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.4rem, 4vw, 4.5rem);
     margin-bottom: 20px;
     font-weight: 800;
+    line-height: 1.1;
     animation: slideDown 0.8s ease;
 }
 
 .hero-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 40px;
     opacity: 0.95;
+    max-width: 620px;
     animation: slideUp 0.8s ease;
 }
 
 .hero-buttons {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     animation: slideUp 1s ease;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 36px;
+    animation: slideUp 1.2s ease;
+    flex-wrap: wrap;
+}
+
+.hero-stats div {
+    min-width: 110px;
+}
+
+.hero-stats strong {
+    display: block;
+    font-size: 1.9rem;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+.hero-stats span {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem;
+}
+
+.hero-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 440px;
+}
+
+.hero-visual img {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 560px);
+    filter: drop-shadow(0 28px 35px rgba(15, 23, 42, 0.2));
+    animation: floatCard 4.5s ease-in-out infinite;
+}
+
+.orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(6px);
+    opacity: 0.8;
+}
+
+.orb-one {
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.18);
+    right: 10%;
+    top: 10%;
+    animation: pulseOrb 6s ease-in-out infinite;
+}
+
+.orb-two {
+    width: 220px;
+    height: 220px;
+    background: rgba(125, 211, 252, 0.22);
+    left: 5%;
+    bottom: 4%;
+    animation: pulseOrb 7s ease-in-out infinite reverse;
 }
 
 @keyframes slideDown {
@@ -168,6 +263,26 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes pulseOrb {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.14);
+        opacity: 1;
     }
 }
 
@@ -329,27 +444,12 @@ body {
     justify-content: center;
 }
 
-.placeholder-image {
+.about-image img {
     width: 100%;
-    height: 400px;
-    background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-}
-
-.placeholder-image i {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    opacity: 0.5;
-}
-
-.placeholder-image p {
-    font-size: 1.1rem;
-    opacity: 0.7;
+    max-width: 540px;
+    border-radius: 18px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(30, 64, 175, 0.08);
 }
 
 /* ==================== Testimonials Section ==================== */
@@ -588,6 +688,23 @@ body {
 
     .nav-menu li {
         padding: 15px 0;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
     }
 
     .hero-content h1 {
