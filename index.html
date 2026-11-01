@@ -240,7 +240,11 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm" action="/api/contact" method="POST">
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="hidden" name="subject" value="New cleaning quote request from KM Cleaning Services website">
+                    <input type="hidden" name="redirect" value="https://km1223-lab.github.io/kmcleaningservices/thank-you.html">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
                     </div>
